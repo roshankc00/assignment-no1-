@@ -8,14 +8,24 @@
   </head>
   <body>
     <header> 
+      <!-- navbar  -->
+      <h1> Navbar </h1>
         <nav>
             <ul>
-                <li> Home </li>
-                <li> About </li>
-                <li> Contact</li>
+              <li> <a href="#">Home  </a></li>
+              <li> <a href="#">About </a></li>
+              <li> <a href="#"> Contact </a></li>
+              <li> <a href="#"> Blogs </a></li>
+              <li> <a href="#"> Gallery </a></li>
+              <li> <a href="#"> services </a></li>
+              <li> <a href="#">  </a></li>
+               
             </ul>
         </nav>
     </header>
+<!-- main cont -->
+<h1> Main content </h1>
+
     <main>
       <container>
         <div>
@@ -42,12 +52,27 @@
             </thead>
             <tbody class="insertme">
                 
-
+                https://github.com/roshankc00/assignment-no1-
             </tbody>
         </table>
       </container>
     </main><br><br>
-    <footer> &copy; rohitkc8848@gmail.com </footer>
+
+    <!-- footer  -->
+    <h1> Footer </h1>
+    <footer> <span> &copy; rohitkc8848@gmail.com </span> <br>
+      <h1> Follow me on </h1>
+      <ul>>
+        
+        <li> <a href="https://www.facebook.com/roshan.karki.5648137">Facebook</a></li>
+        <li> <a href="https://github.com/roshankc00">github</a></li>
+        <li> <a href="https://www.linkedin.com/in/roshan-karki-a28744273/">Linkdin </a></li>
+      </ul>
+        
+
+    </footer>
+<!-- js  -->
+
     <script>
       let ul = document.querySelector(".taskList");
       let button=document.querySelector('.btn')
@@ -62,7 +87,9 @@
         tr.innerHTML=`<td> ${task.value} </td>`
 
         ul.appendChild(li)
+        
         table.appendChild(tr)
+        task.value=""
     
       })
     
