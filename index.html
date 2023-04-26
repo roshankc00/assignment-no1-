@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header> 
+        <nav>
+            <ul>
+                <li> Home </li>
+                <li> About </li>
+                <li> Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <container>
+        <div>
+          <h1>Enter the task</h1>
+          <input type="text" placeholder="enter the task" class="inputwala"  />
+          <button class="btn" type="submit">submit</button>
+        </div>
+        <div class="yourtask">
+            <h1> List of todos in list </h1>
+          <ul class="taskList">
+          </ul>
+        </div>
+
+      </container>
+      <container> 
+        <table style="border: 2px solid black;">
+            <h1> List of todos in table</h1>
+            <thead>
+                
+                <tr>
+                    <th> task</th>
+                </tr>
+
+            </thead>
+            <tbody class="insertme">
+                
+
+            </tbody>
+        </table>
+      </container>
+    </main><br><br>
+    <footer> &copy; rohitkc8848@gmail.com </footer>
+    <script>
+      let ul = document.querySelector(".taskList");
+      let button=document.querySelector('.btn')
+      let task=document.querySelector('.inputwala')
+      let li = document.createElement("li");
+      let table=document.querySelector('.insertme')
+      
+      button.addEventListener('click',()=>{
+          const li=document.createElement('li')
+        const tr=document.createElement('tr')
+        li.innerText=task.value
+        tr.innerHTML=`<td> ${task.value} </td>`
+
+        ul.appendChild(li)
+        table.appendChild(tr)
+    
+      })
+    
+    </script>
+  </body>
+</html>
